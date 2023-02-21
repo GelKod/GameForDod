@@ -46,9 +46,6 @@ namespace Своя_игра
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Qweschen qweschen = new Qweschen(names2,k,int.Parse(button1.Text));
-            qweschen.Show();
             button1.Enabled = false;
         }
 
