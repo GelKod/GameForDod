@@ -5,7 +5,7 @@ namespace Своя_игра
         int numberTeam;
         string[,] teamNames;
         string[] defoltNames = { "Почему...", "Кто-то", "Настойки", "Чебупели", "Крокодилы" };
-
+        //ХУЙ
         public Form1()
         {
             InitializeComponent();
