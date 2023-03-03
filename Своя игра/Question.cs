@@ -12,14 +12,16 @@ namespace Своя_игра
 {
     public partial class Question : Form
     {
-        string[] txt = { "dfdfdffd", "fdfdfdfdfd", "fdfddf" };
+        string[,] txt = new string[4, 5];
         string[,] name;
+        int[] cheked;
         int g = 0;
-        public Question(int a, string[,] names)
+        public Question(int a, string[,] names, int[] cheked, int b)
         {
             InitializeComponent();
 
             name = names;
+            this.cheked = cheked;
 
             button1.Visible = false;
             button2.Visible = false;
@@ -49,8 +51,9 @@ namespace Своя_игра
             button9.Text = "-";
             button10.Text = "+";
 
-            int b = (a / 100) - 1;
-            label1.Text = txt[b];
+            int j = (a / 100) - 1;
+            label1.Text = txt[b, j];
+            txt = Text2();
             g = a;
 
             if (names.GetLength(1) == 1)
@@ -140,6 +143,31 @@ namespace Своя_игра
             }
         }
 
+        private string[,] Text2()
+        {
+            string[,] text = new string[4, 5];
+            text[0, 0] = "";
+            text[0, 1] = "";
+            text[0, 2] = "";
+            text[0, 3] = "";
+            text[0, 4] = "";
+            text[1, 0] = "";
+            text[1, 1] = "";
+            text[1, 2] = "";
+            text[1, 3] = "";
+            text[1, 4] = "";
+            text[2, 0] = "";
+            text[2, 1] = "";
+            text[2, 2] = "";
+            text[2, 3] = "";
+            text[2, 4] = "";
+            text[3, 0] = "";
+            text[3, 1] = "";
+            text[3, 2] = "";
+            text[3, 3] = "";
+            text[3, 4] = "";
+            return text;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -147,15 +175,9 @@ namespace Своя_игра
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((int.Parse(name[1, 0]) - g) < 0)
-            {
-                name[1, 0] = "0";
-            }
-            else
-            {
-                int j = int.Parse(name[1, 0]) - g;
-                name[1, 0] = j.ToString();
-            }
+            int j = int.Parse(name[1, 0]) - g;
+            name[1, 0] = j.ToString();
+
             label2.Text = "     " + name[0, 0] + " - " + name[1, 0] + "\r\n";
         }
 
@@ -164,21 +186,15 @@ namespace Своя_игра
             int j = int.Parse(name[1, 0]) + g;
             name[1, 0] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g);
+            Form2 fr = new Form2(name, g, cheked);
             fr.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if ((int.Parse(name[1, 1]) - g) < 0)
-            {
-                name[1, 1] = "0";
-            }
-            else
-            {
-                int j = int.Parse(name[1, 1]) - g;
-                name[1, 1] = j.ToString();
-            }
+            int j = int.Parse(name[1, 1]) - g;
+            name[1, 1] = j.ToString();
+
             label3.Text = "     " + name[0, 1] + " - " + name[1, 1] + "\r\n";
         }
 
@@ -187,21 +203,15 @@ namespace Своя_игра
             int j = int.Parse(name[1, 1]) + g;
             name[1, 1] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g);
+            Form2 fr = new Form2(name, g, cheked);
             fr.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if ((int.Parse(name[1, 2]) - g) < 0)
-            {
-                name[1, 2] = "0";
-            }
-            else
-            {
-                int j = int.Parse(name[1, 2]) - g;
-                name[1, 2] = j.ToString();
-            }
+            int j = int.Parse(name[1, 2]) - g;
+            name[1, 2] = j.ToString();
+
             label4.Text = "     " + name[0, 2] + " - " + name[1, 2] + "\r\n";
         }
 
@@ -210,21 +220,15 @@ namespace Своя_игра
             int j = int.Parse(name[1, 2]) + g;
             name[1, 2] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g);
+            Form2 fr = new Form2(name, g, cheked);
             fr.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if ((int.Parse(name[1, 3]) - g) < 0)
-            {
-                name[1, 3] = "0";
-            }
-            else
-            {
-                int j = int.Parse(name[1, 3]) - g;
-                name[1, 3] = j.ToString();
-            }
+            int j = int.Parse(name[1, 3]) - g;
+            name[1, 3] = j.ToString();
+
             label5.Text = "     " + name[0, 3] + " - " + name[1, 3] + "\r\n";
         }
 
@@ -233,21 +237,15 @@ namespace Своя_игра
             int j = int.Parse(name[1, 3]) + g;
             name[1, 3] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g);
+            Form2 fr = new Form2(name, g, cheked);
             fr.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if ((int.Parse(name[1, 4]) - g) < 0)
-            {
-                name[1, 4] = "0";
-            }
-            else
-            {
-                int j = int.Parse(name[1, 4]) - g;
-                name[1, 4] = j.ToString();
-            }
+            int j = int.Parse(name[1, 4]) - g;
+            name[1, 4] = j.ToString();
+
             label6.Text = "     " + name[0, 4] + " - " + name[1, 4] + "\r\n";
         }
 
@@ -256,7 +254,14 @@ namespace Своя_игра
             int j = int.Parse(name[1, 4]) + g;
             name[1, 4] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g);
+            Form2 fr = new Form2(name, g, cheked);
+            fr.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 fr = new Form2(name, g, cheked);
             fr.Show();
         }
     }

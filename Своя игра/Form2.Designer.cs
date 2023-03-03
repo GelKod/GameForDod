@@ -53,6 +53,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -300,11 +301,22 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "label5";
             // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(622, 328);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(145, 74);
+            this.button21.TabIndex = 25;
+            this.button21.Text = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button21);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -366,5 +378,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Button button21;
     }
 }
