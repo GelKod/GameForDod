@@ -5,7 +5,7 @@ namespace Своя_игра
         int numberTeam;
         string[,] teamNames;
         string[] defoltNames = { "Почему...", "Кто-то", "Настойки", "Чебупели", "Крокодилы" };
-        //ХУЙ
+        int[] chek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public Form1()
         {
             InitializeComponent();
@@ -60,7 +60,7 @@ namespace Своя_игра
             {
                 //новое окно или что то для самой игры 
 
-                Form2 game = new Form2(teamNames,j);
+                Form2 game = new Form2(teamNames,j,chek);
                 this.Hide();
                 game.Show();
 
@@ -84,6 +84,11 @@ namespace Своя_игра
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
