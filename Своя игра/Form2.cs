@@ -13,14 +13,12 @@ namespace Своя_игра
     public partial class Form2 : Form
     {
         string[,] names2;
-        int k;
         int[] chek;
 
-        public Form2(string[,] names, int g, int[] chek)
+        public Form2(string[,] names, int[] chek)
         {
             InitializeComponent();
             names2 = names;
-            k = g;
             string str = "";
             for (int i = 0; i < names.GetLength(1); i++)
             {
@@ -278,6 +276,12 @@ namespace Своя_игра
         private void button21_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            ErrorChek ec = new ErrorChek(names2,chek);
+            ec.Show();
         }
     }
 }

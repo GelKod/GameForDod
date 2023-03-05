@@ -186,7 +186,7 @@ namespace Своя_игра
             int j = int.Parse(name[1, 0]) + g;
             name[1, 0] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g, cheked);
+            Form2 fr = new Form2(name, cheked);
             fr.Show();
         }
 
@@ -203,7 +203,7 @@ namespace Своя_игра
             int j = int.Parse(name[1, 1]) + g;
             name[1, 1] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g, cheked);
+            Form2 fr = new Form2(name, cheked);
             fr.Show();
         }
 
@@ -220,7 +220,7 @@ namespace Своя_игра
             int j = int.Parse(name[1, 2]) + g;
             name[1, 2] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g, cheked);
+            Form2 fr = new Form2(name, cheked);
             fr.Show();
         }
 
@@ -237,7 +237,7 @@ namespace Своя_игра
             int j = int.Parse(name[1, 3]) + g;
             name[1, 3] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g, cheked);
+            Form2 fr = new Form2(name, cheked);
             fr.Show();
         }
 
@@ -254,14 +254,14 @@ namespace Своя_игра
             int j = int.Parse(name[1, 4]) + g;
             name[1, 4] = j.ToString();
             this.Close();
-            Form2 fr = new Form2(name, g, cheked);
+            Form2 fr = new Form2(name, cheked);
             fr.Show();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form2 fr = new Form2(name, g, cheked);
+            Form2 fr = new Form2(name, cheked);
             fr.Show();
         }
     }

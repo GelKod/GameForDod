@@ -2,8 +2,10 @@ namespace Своя_игра
 {
     public partial class Form1 : Form
     {
+        
         int numberTeam;
         string[,] teamNames;
+        //Список с рандомными названиями которые будут рандомно заполнятся при добавления new команды.
         string[] defoltNames = { "Почему...", "Кто-то", "Настойки", "Чебупели", "Крокодилы" };
         int[] chek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public Form1()
@@ -60,7 +62,7 @@ namespace Своя_игра
             {
                 //новое окно или что то для самой игры 
 
-                Form2 game = new Form2(teamNames,j,chek);
+                Form2 game = new Form2(teamNames,chek);
                 this.Hide();
                 game.Show();
 
