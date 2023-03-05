@@ -54,6 +54,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -311,11 +312,22 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(622, 243);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(145, 74);
+            this.button22.TabIndex = 26;
+            this.button22.Text = "Отладка";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -379,5 +391,6 @@
         private Label label4;
         private Label label5;
         private Button button21;
+        private Button button22;
     }
 }
