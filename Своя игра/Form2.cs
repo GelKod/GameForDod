@@ -32,45 +32,106 @@ namespace Своя_игра
         private void Block(int[] a)
         {
             if (a[0] > 0)
+            {
                 button1.Enabled = false;
+                button1.Text = "";
+            }
             if (a[1] > 0)
+            {
                 button2.Enabled = false;
+                button2.Text = "";
+            }
+
             if (a[2] > 0)
+            {
                 button3.Enabled = false;
-            if (a[3] >0)
+                button3.Text = "";
+            }
+            if (a[3] > 0)
+            {
                 button4.Enabled = false;
+                button4.Text = "";
+            }
             if (a[4] > 0)
+            {
                 button5.Enabled = false;
+                button6.Text = "";
+            }
             if (a[5] > 0)
+            {
                 button6.Enabled = false;
+                button6.Text = "";
+            }
             if (a[6] > 0)
+            {
                 button7.Enabled = false;
+                button7.Text = "";
+            }
             if (a[7] > 0)
+            {
                 button8.Enabled = false;
+                button8.Text = "";
+            }
             if (a[8] > 0)
+            {
                 button9.Enabled = false;
+                button9.Text = "";
+            }
             if (a[9] > 0)
+            {
                 button10.Enabled = false;
+                button10.Text = "";
+            }
             if (a[10] > 0)
+            {
                 button11.Enabled = false;
+                button11.Text = "";
+            }
             if (a[11] > 0)
+            {
                 button12.Enabled = false;
+                button12.Text = "";
+            }
             if (a[12] > 0)
+            {
                 button13.Enabled = false;
+                button13.Text = "";
+            }
             if (a[13] > 0)
+            {
                 button14.Enabled = false;
+                button14.Text = "";
+            }
             if (a[14] > 0)
+            {
                 button15.Enabled = false;
+                button15.Text = "";
+            }
             if (a[15] > 0)
+            {
                 button16.Enabled = false;
+                button16.Text = "";
+            }
             if (a[16] > 0)
+            {
                 button17.Enabled = false;
+                button17.Text = "";
+            }
             if (a[17] > 0)
+            {
                 button18.Enabled = false;
+                button18.Text = "";
+            }
             if (a[18] > 0)
+            {
                 button19.Enabled = false;
+                button19.Text = "";
+            }
             if (a[19] > 0)
+            {
                 button20.Enabled = false;
+                button20.Text = "";
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
