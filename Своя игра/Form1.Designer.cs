@@ -121,7 +121,6 @@
             // 
             // button4
             // 
-            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(365, 255);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
