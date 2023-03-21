@@ -55,7 +55,7 @@ namespace Своя_игра
             if (a[4] > 0)
             {
                 button5.Enabled = false;
-                button6.Text = "";
+                button5.Text = "";
             }
             if (a[5] > 0)
             {

@@ -16,7 +16,11 @@ namespace Своя_игра
             numberTeam = 0;
             button2.Enabled = false;
             dataGridView1.RowCount = 1;
-            dataGridView1[0, 0].Value = defoltNames[rnd.Next(0, 5)];
+            int r = rnd.Next(0, defoltNames.Length);
+            dataGridView1[0, 0].Value = defoltNames[r];
+            selectedNames = Add_elem(selectedNames, defoltNames[r]);
+
+            defoltNames = defoltNames.Where(e => e != defoltNames[r]).ToArray();
         }
 
         static void Insert(ref string[] array, string value)
@@ -120,6 +124,11 @@ namespace Своя_игра
         private void button4_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
