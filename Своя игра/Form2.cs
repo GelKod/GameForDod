@@ -142,7 +142,7 @@ namespace Своя_игра
         private void button1_Click(object sender, EventArgs e)
         {
             chek[0] = 1;
-            this.Hide();
+            this.Close();
             int g = int.Parse(button1.Text);
             Question question = new Question(g, names2, chek,0);
             question.Show();
@@ -151,7 +151,7 @@ namespace Своя_игра
         private void button2_Click(object sender, EventArgs e)
         {
             chek[1] = 1;
-            this.Hide();
+            this.Close();
             int g = int.Parse(button2.Text);
             Question question = new Question(g, names2, chek, 0);
             question.Show();
@@ -160,7 +160,7 @@ namespace Своя_игра
         private void button6_Click(object sender, EventArgs e)
         {
             chek[5] = 1;
-            this.Hide();
+            this.Close();
             int g = int.Parse(button6.Text);
             Question question = new Question(g, names2, chek,1);
             question.Show();
@@ -169,7 +169,7 @@ namespace Своя_игра
         private void button3_Click(object sender, EventArgs e)
         {
             chek[2] = 1;
-            this.Hide();
+            this.Close();
             int g = int.Parse(button3.Text);
             Question question = new Question(g, names2, chek, 0);
             question.Show();
@@ -179,7 +179,7 @@ namespace Своя_игра
         {
             chek[3] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button4.Text);
             Question question = new Question(g, names2, chek, 0);
             question.Show();
@@ -189,7 +189,7 @@ namespace Своя_игра
         {
             chek[4] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button5.Text);
             Question question = new Question(g, names2, chek, 0);
             question.Show();
@@ -199,7 +199,7 @@ namespace Своя_игра
         {
             chek[6] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button7.Text);
             Question question = new Question(g, names2, chek, 1);
             question.Show();
@@ -209,7 +209,7 @@ namespace Своя_игра
         {
             chek[7] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button8.Text);
             Question question = new Question(g, names2, chek, 1);
             question.Show();
@@ -219,7 +219,7 @@ namespace Своя_игра
         {
             chek[8] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button9.Text);
             Question question = new Question(g, names2, chek, 1);
             question.Show();
@@ -229,7 +229,7 @@ namespace Своя_игра
         {
             chek[9] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button10.Text);
             Question question = new Question(g, names2, chek, 1);
             question.Show();
@@ -239,7 +239,7 @@ namespace Своя_игра
         {
             chek[10] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button11.Text);
             Question question = new Question(g, names2, chek, 2);
             question.Show();
@@ -249,7 +249,7 @@ namespace Своя_игра
         {
             chek[11] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button12.Text);
             Question question = new Question(g, names2, chek, 2);
             question.Show();
@@ -259,7 +259,7 @@ namespace Своя_игра
         {
             chek[12] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button13.Text);
             Question question = new Question(g, names2, chek, 2);
             question.Show();
@@ -269,7 +269,7 @@ namespace Своя_игра
         {
             chek[13] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button14.Text);
             Question question = new Question(g, names2, chek, 2);
             question.Show();
@@ -279,7 +279,7 @@ namespace Своя_игра
         {
             chek[14] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button15.Text);
             Question question = new Question(g, names2, chek, 2);
             question.Show();
@@ -289,7 +289,7 @@ namespace Своя_игра
         {
             chek[15] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button16.Text);
             Question question = new Question(g, names2, chek, 3);
             question.Show();
@@ -299,7 +299,7 @@ namespace Своя_игра
         {
             chek[16] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button17.Text);
             Question question = new Question(g, names2, chek, 3);
             question.Show();
@@ -309,7 +309,7 @@ namespace Своя_игра
         {
             chek[17] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button18.Text);
             Question question = new Question(g, names2, chek, 3);
             question.Show();
@@ -319,7 +319,7 @@ namespace Своя_игра
         {
             chek[18] = 1;
 
-            this.Hide();
+            this.Close();
             int g = int.Parse(button19.Text);
             Question question = new Question(g, names2, chek, 3);
             question.Show();
@@ -328,7 +328,7 @@ namespace Своя_игра
         private void button20_Click(object sender, EventArgs e)
         {
             chek[19] = 1;
-            this.Hide();
+            this.Close();
             int g = int.Parse(button20.Text);
             Question question = new Question(g, names2, chek, 3);
             question.Show();
@@ -343,6 +343,26 @@ namespace Своя_игра
         {
             ErrorChek ec = new ErrorChek(names2,chek);
             ec.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
