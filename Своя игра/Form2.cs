@@ -15,6 +15,7 @@ namespace Своя_игра
         string[,] names2;
         int[] chek;
 
+
         public Form2(string[,] names, int[] chek)
         {
             InitializeComponent();

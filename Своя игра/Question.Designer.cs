@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Question));
-            this.label1 = new System.Windows.Forms.Label();
+            this.question_label = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,18 +48,17 @@
             this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // question_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Blue;
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(36, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.question_label.BackColor = System.Drawing.Color.Transparent;
+            this.question_label.ForeColor = System.Drawing.Color.Snow;
+            this.question_label.Location = new System.Drawing.Point(11, 10);
+            this.question_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.question_label.Name = "question_label";
+            this.question_label.Size = new System.Drawing.Size(340, 172);
+            this.question_label.TabIndex = 0;
+            this.question_label.Text = "label1";
+            this.question_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -287,7 +286,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.question_label);
             this.ForeColor = System.Drawing.Color.Snow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Question";
@@ -300,7 +299,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label question_label;
         private Button button1;
         private Button button2;
         private Button button3;
