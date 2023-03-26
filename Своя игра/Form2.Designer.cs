@@ -421,9 +421,9 @@
             this.label5.Location = new System.Drawing.Point(61, 206);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 23);
+            this.label5.Size = new System.Drawing.Size(77, 23);
             this.label5.TabIndex = 24;
-            this.label5.Text = "Тема 4";
+            this.label5.Text = "Разное";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button21
