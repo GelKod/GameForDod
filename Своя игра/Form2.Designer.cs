@@ -29,488 +29,961 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button21 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            question_button_11 = new Button();
+            question_button_12 = new Button();
+            question_button_13 = new Button();
+            question_button_14 = new Button();
+            question_button_15 = new Button();
+            question_button_21 = new Button();
+            question_button_22 = new Button();
+            question_button_23 = new Button();
+            question_button_24 = new Button();
+            question_button_25 = new Button();
+            question_button_31 = new Button();
+            question_button_32 = new Button();
+            question_button_33 = new Button();
+            question_button_34 = new Button();
+            question_button_35 = new Button();
+            question_button_41 = new Button();
+            question_button_42 = new Button();
+            question_button_43 = new Button();
+            question_button_44 = new Button();
+            question_button_45 = new Button();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            button_exit = new Button();
+            team1_name = new Label();
+            team2_name = new Label();
+            team3_name = new Label();
+            team4_name = new Label();
+            team5_name = new Label();
+            team1_score = new Label();
+            team2_score = new Label();
+            team4_score = new Label();
+            team3_score = new Label();
+            team5_score = new Label();
+            panel_question = new Panel();
+            panel2 = new Panel();
+            question_panel_team5_win = new Button();
+            question_panel_team4_win = new Button();
+            question_panel_team3_win = new Button();
+            question_panel_team2_win = new Button();
+            question_panel_team1_win = new Button();
+            question_panel_team5_lose = new Button();
+            question_panel_team4_lose = new Button();
+            question_panel_team3_lose = new Button();
+            question_panel_team2_lose = new Button();
+            question_panel_team1_lose = new Button();
+            question_panel_team1_name = new Label();
+            question_panel_team5_score = new Label();
+            question_panel_team2_name = new Label();
+            question_panel_team4_score = new Label();
+            question_panel_team3_name = new Label();
+            question_panel_team3_score = new Label();
+            question_panel_team4_name = new Label();
+            question_panel_team2_score = new Label();
+            question_panel_team5_name = new Label();
+            question_panel_team1_score = new Label();
+            question_label = new Label();
+            panel_question.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
-            // label1
+            // question_button_11
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(764, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            question_button_11.BackColor = Color.Blue;
+            question_button_11.FlatStyle = FlatStyle.Popup;
+            question_button_11.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_11.ForeColor = Color.Gold;
+            question_button_11.Location = new Point(376, 36);
+            question_button_11.Margin = new Padding(2);
+            question_button_11.Name = "question_button_11";
+            question_button_11.Size = new Size(65, 50);
+            question_button_11.TabIndex = 1;
+            question_button_11.Text = "100";
+            question_button_11.UseVisualStyleBackColor = false;
+            question_button_11.Click += question_button_11_Click;
             // 
-            // button1
+            // question_button_12
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(376, 36);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "100";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            question_button_12.BackColor = Color.Blue;
+            question_button_12.FlatStyle = FlatStyle.Popup;
+            question_button_12.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_12.ForeColor = Color.Gold;
+            question_button_12.Location = new Point(446, 36);
+            question_button_12.Margin = new Padding(2);
+            question_button_12.Name = "question_button_12";
+            question_button_12.Size = new Size(65, 50);
+            question_button_12.TabIndex = 2;
+            question_button_12.Text = "200";
+            question_button_12.UseVisualStyleBackColor = false;
+            question_button_12.Click += question_button_12_Click;
             // 
-            // button2
+            // question_button_13
             // 
-            this.button2.BackColor = System.Drawing.Color.Blue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(446, 36);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 50);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "200";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            question_button_13.BackColor = Color.Blue;
+            question_button_13.FlatStyle = FlatStyle.Popup;
+            question_button_13.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_13.ForeColor = Color.Gold;
+            question_button_13.Location = new Point(515, 36);
+            question_button_13.Margin = new Padding(2);
+            question_button_13.Name = "question_button_13";
+            question_button_13.Size = new Size(65, 50);
+            question_button_13.TabIndex = 3;
+            question_button_13.Text = "300";
+            question_button_13.UseVisualStyleBackColor = false;
+            question_button_13.Click += question_button_13_Click;
             // 
-            // button3
+            // question_button_14
             // 
-            this.button3.BackColor = System.Drawing.Color.Blue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Gold;
-            this.button3.Location = new System.Drawing.Point(515, 36);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 50);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "300";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            question_button_14.BackColor = Color.Blue;
+            question_button_14.FlatStyle = FlatStyle.Popup;
+            question_button_14.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_14.ForeColor = Color.Gold;
+            question_button_14.Location = new Point(584, 36);
+            question_button_14.Margin = new Padding(2);
+            question_button_14.Name = "question_button_14";
+            question_button_14.Size = new Size(65, 50);
+            question_button_14.TabIndex = 4;
+            question_button_14.Text = "400";
+            question_button_14.UseVisualStyleBackColor = false;
+            question_button_14.Click += question_button_14_Click;
             // 
-            // button4
+            // question_button_15
             // 
-            this.button4.BackColor = System.Drawing.Color.Blue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.Gold;
-            this.button4.Location = new System.Drawing.Point(584, 36);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 50);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "400";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            question_button_15.BackColor = Color.Blue;
+            question_button_15.FlatStyle = FlatStyle.Popup;
+            question_button_15.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_15.ForeColor = Color.Gold;
+            question_button_15.Location = new Point(654, 36);
+            question_button_15.Margin = new Padding(2);
+            question_button_15.Name = "question_button_15";
+            question_button_15.Size = new Size(65, 50);
+            question_button_15.TabIndex = 5;
+            question_button_15.Text = "500";
+            question_button_15.UseVisualStyleBackColor = false;
+            question_button_15.Click += question_button_15_Click;
             // 
-            // button5
+            // question_button_21
             // 
-            this.button5.BackColor = System.Drawing.Color.Blue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.Gold;
-            this.button5.Location = new System.Drawing.Point(654, 36);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(65, 50);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "500";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            question_button_21.BackColor = Color.Blue;
+            question_button_21.FlatStyle = FlatStyle.Popup;
+            question_button_21.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_21.ForeColor = Color.Gold;
+            question_button_21.Location = new Point(376, 89);
+            question_button_21.Margin = new Padding(2);
+            question_button_21.Name = "question_button_21";
+            question_button_21.Size = new Size(65, 50);
+            question_button_21.TabIndex = 6;
+            question_button_21.Text = "100";
+            question_button_21.UseVisualStyleBackColor = false;
+            question_button_21.Click += question_button_21_Click;
             // 
-            // button6
+            // question_button_22
             // 
-            this.button6.BackColor = System.Drawing.Color.Blue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.Gold;
-            this.button6.Location = new System.Drawing.Point(376, 89);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(65, 50);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "100";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            question_button_22.BackColor = Color.Blue;
+            question_button_22.FlatStyle = FlatStyle.Popup;
+            question_button_22.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_22.ForeColor = Color.Gold;
+            question_button_22.Location = new Point(446, 89);
+            question_button_22.Margin = new Padding(2);
+            question_button_22.Name = "question_button_22";
+            question_button_22.Size = new Size(65, 50);
+            question_button_22.TabIndex = 7;
+            question_button_22.Text = "200";
+            question_button_22.UseVisualStyleBackColor = false;
+            question_button_22.Click += question_button_22_Click;
             // 
-            // button7
+            // question_button_23
             // 
-            this.button7.BackColor = System.Drawing.Color.Blue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.Gold;
-            this.button7.Location = new System.Drawing.Point(446, 89);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(65, 50);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "200";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            question_button_23.BackColor = Color.Blue;
+            question_button_23.FlatStyle = FlatStyle.Popup;
+            question_button_23.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_23.ForeColor = Color.Gold;
+            question_button_23.Location = new Point(515, 89);
+            question_button_23.Margin = new Padding(2);
+            question_button_23.Name = "question_button_23";
+            question_button_23.Size = new Size(65, 50);
+            question_button_23.TabIndex = 8;
+            question_button_23.Text = "300";
+            question_button_23.UseVisualStyleBackColor = false;
+            question_button_23.Click += question_button_23_Click;
             // 
-            // button8
+            // question_button_24
             // 
-            this.button8.BackColor = System.Drawing.Color.Blue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.Gold;
-            this.button8.Location = new System.Drawing.Point(515, 89);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(65, 50);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "300";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            question_button_24.BackColor = Color.Blue;
+            question_button_24.FlatStyle = FlatStyle.Popup;
+            question_button_24.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_24.ForeColor = Color.Gold;
+            question_button_24.Location = new Point(584, 89);
+            question_button_24.Margin = new Padding(2);
+            question_button_24.Name = "question_button_24";
+            question_button_24.Size = new Size(65, 50);
+            question_button_24.TabIndex = 9;
+            question_button_24.Text = "400";
+            question_button_24.UseVisualStyleBackColor = false;
+            question_button_24.Click += question_button_24_Click;
             // 
-            // button9
+            // question_button_25
             // 
-            this.button9.BackColor = System.Drawing.Color.Blue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.Color.Gold;
-            this.button9.Location = new System.Drawing.Point(584, 89);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(65, 50);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "400";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            question_button_25.BackColor = Color.Blue;
+            question_button_25.FlatStyle = FlatStyle.Popup;
+            question_button_25.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_25.ForeColor = Color.Gold;
+            question_button_25.Location = new Point(654, 89);
+            question_button_25.Margin = new Padding(2);
+            question_button_25.Name = "question_button_25";
+            question_button_25.Size = new Size(65, 50);
+            question_button_25.TabIndex = 10;
+            question_button_25.Text = "500";
+            question_button_25.UseVisualStyleBackColor = false;
+            question_button_25.Click += question_button_25_Click;
             // 
-            // button10
+            // question_button_31
             // 
-            this.button10.BackColor = System.Drawing.Color.Blue;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.Color.Gold;
-            this.button10.Location = new System.Drawing.Point(654, 89);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(65, 50);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "500";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            question_button_31.BackColor = Color.Blue;
+            question_button_31.FlatStyle = FlatStyle.Popup;
+            question_button_31.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_31.ForeColor = Color.Gold;
+            question_button_31.Location = new Point(376, 142);
+            question_button_31.Margin = new Padding(2);
+            question_button_31.Name = "question_button_31";
+            question_button_31.Size = new Size(65, 50);
+            question_button_31.TabIndex = 11;
+            question_button_31.Text = "100";
+            question_button_31.UseVisualStyleBackColor = false;
+            question_button_31.Click += question_button_31_Click;
             // 
-            // button11
+            // question_button_32
             // 
-            this.button11.BackColor = System.Drawing.Color.Blue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.Color.Gold;
-            this.button11.Location = new System.Drawing.Point(376, 142);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(65, 50);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "100";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            question_button_32.BackColor = Color.Blue;
+            question_button_32.FlatStyle = FlatStyle.Popup;
+            question_button_32.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_32.ForeColor = Color.Gold;
+            question_button_32.Location = new Point(446, 142);
+            question_button_32.Margin = new Padding(2);
+            question_button_32.Name = "question_button_32";
+            question_button_32.Size = new Size(65, 50);
+            question_button_32.TabIndex = 12;
+            question_button_32.Text = "200";
+            question_button_32.UseVisualStyleBackColor = false;
+            question_button_32.Click += question_button_32_Click;
             // 
-            // button12
+            // question_button_33
             // 
-            this.button12.BackColor = System.Drawing.Color.Blue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button12.ForeColor = System.Drawing.Color.Gold;
-            this.button12.Location = new System.Drawing.Point(446, 142);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(65, 50);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "200";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            question_button_33.BackColor = Color.Blue;
+            question_button_33.FlatStyle = FlatStyle.Popup;
+            question_button_33.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_33.ForeColor = Color.Gold;
+            question_button_33.Location = new Point(515, 142);
+            question_button_33.Margin = new Padding(2);
+            question_button_33.Name = "question_button_33";
+            question_button_33.Size = new Size(65, 50);
+            question_button_33.TabIndex = 13;
+            question_button_33.Text = "300";
+            question_button_33.UseVisualStyleBackColor = false;
+            question_button_33.Click += question_button_33_Click;
             // 
-            // button13
+            // question_button_34
             // 
-            this.button13.BackColor = System.Drawing.Color.Blue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button13.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button13.ForeColor = System.Drawing.Color.Gold;
-            this.button13.Location = new System.Drawing.Point(515, 142);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(65, 50);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "300";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            question_button_34.BackColor = Color.Blue;
+            question_button_34.FlatStyle = FlatStyle.Popup;
+            question_button_34.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_34.ForeColor = Color.Gold;
+            question_button_34.Location = new Point(584, 142);
+            question_button_34.Margin = new Padding(2);
+            question_button_34.Name = "question_button_34";
+            question_button_34.Size = new Size(65, 50);
+            question_button_34.TabIndex = 14;
+            question_button_34.Text = "400";
+            question_button_34.UseVisualStyleBackColor = false;
+            question_button_34.Click += question_button_34_Click;
             // 
-            // button14
+            // question_button_35
             // 
-            this.button14.BackColor = System.Drawing.Color.Blue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button14.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button14.ForeColor = System.Drawing.Color.Gold;
-            this.button14.Location = new System.Drawing.Point(584, 142);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(65, 50);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "400";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            question_button_35.BackColor = Color.Blue;
+            question_button_35.FlatStyle = FlatStyle.Popup;
+            question_button_35.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_35.ForeColor = Color.Gold;
+            question_button_35.Location = new Point(654, 142);
+            question_button_35.Margin = new Padding(2);
+            question_button_35.Name = "question_button_35";
+            question_button_35.Size = new Size(65, 50);
+            question_button_35.TabIndex = 15;
+            question_button_35.Text = "500";
+            question_button_35.UseVisualStyleBackColor = false;
+            question_button_35.Click += question_button_35_Click;
             // 
-            // button15
+            // question_button_41
             // 
-            this.button15.BackColor = System.Drawing.Color.Blue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button15.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button15.ForeColor = System.Drawing.Color.Gold;
-            this.button15.Location = new System.Drawing.Point(654, 142);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(65, 50);
-            this.button15.TabIndex = 15;
-            this.button15.Text = "500";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            question_button_41.BackColor = Color.Blue;
+            question_button_41.FlatStyle = FlatStyle.Popup;
+            question_button_41.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_41.ForeColor = Color.Gold;
+            question_button_41.Location = new Point(376, 196);
+            question_button_41.Margin = new Padding(2);
+            question_button_41.Name = "question_button_41";
+            question_button_41.Size = new Size(65, 50);
+            question_button_41.TabIndex = 16;
+            question_button_41.Text = "100";
+            question_button_41.UseVisualStyleBackColor = false;
+            question_button_41.Click += question_button_41_Click;
             // 
-            // button16
+            // question_button_42
             // 
-            this.button16.BackColor = System.Drawing.Color.Blue;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button16.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.ForeColor = System.Drawing.Color.Gold;
-            this.button16.Location = new System.Drawing.Point(376, 196);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(65, 50);
-            this.button16.TabIndex = 16;
-            this.button16.Text = "100";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            question_button_42.BackColor = Color.Blue;
+            question_button_42.FlatStyle = FlatStyle.Popup;
+            question_button_42.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_42.ForeColor = Color.Gold;
+            question_button_42.Location = new Point(446, 196);
+            question_button_42.Margin = new Padding(2);
+            question_button_42.Name = "question_button_42";
+            question_button_42.Size = new Size(65, 50);
+            question_button_42.TabIndex = 17;
+            question_button_42.Text = "200";
+            question_button_42.UseVisualStyleBackColor = false;
+            question_button_42.Click += question_button_42_Click;
             // 
-            // button17
+            // question_button_43
             // 
-            this.button17.BackColor = System.Drawing.Color.Blue;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button17.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button17.ForeColor = System.Drawing.Color.Gold;
-            this.button17.Location = new System.Drawing.Point(446, 196);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(65, 50);
-            this.button17.TabIndex = 17;
-            this.button17.Text = "200";
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            question_button_43.BackColor = Color.Blue;
+            question_button_43.FlatStyle = FlatStyle.Popup;
+            question_button_43.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_43.ForeColor = Color.Gold;
+            question_button_43.Location = new Point(515, 196);
+            question_button_43.Margin = new Padding(2);
+            question_button_43.Name = "question_button_43";
+            question_button_43.Size = new Size(65, 50);
+            question_button_43.TabIndex = 18;
+            question_button_43.Text = "300";
+            question_button_43.UseVisualStyleBackColor = false;
+            question_button_43.Click += question_button_43_Click;
             // 
-            // button18
+            // question_button_44
             // 
-            this.button18.BackColor = System.Drawing.Color.Blue;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button18.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button18.ForeColor = System.Drawing.Color.Gold;
-            this.button18.Location = new System.Drawing.Point(515, 196);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(65, 50);
-            this.button18.TabIndex = 18;
-            this.button18.Text = "300";
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            question_button_44.BackColor = Color.Blue;
+            question_button_44.FlatStyle = FlatStyle.Popup;
+            question_button_44.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_44.ForeColor = Color.Gold;
+            question_button_44.Location = new Point(584, 196);
+            question_button_44.Margin = new Padding(2);
+            question_button_44.Name = "question_button_44";
+            question_button_44.Size = new Size(65, 50);
+            question_button_44.TabIndex = 19;
+            question_button_44.Text = "400";
+            question_button_44.UseVisualStyleBackColor = false;
+            question_button_44.Click += question_button_44_Click;
             // 
-            // button19
+            // question_button_45
             // 
-            this.button19.BackColor = System.Drawing.Color.Blue;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button19.ForeColor = System.Drawing.Color.Gold;
-            this.button19.Location = new System.Drawing.Point(584, 196);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(65, 50);
-            this.button19.TabIndex = 19;
-            this.button19.Text = "400";
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Blue;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button20.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button20.ForeColor = System.Drawing.Color.Gold;
-            this.button20.Location = new System.Drawing.Point(654, 196);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(65, 50);
-            this.button20.TabIndex = 20;
-            this.button20.Text = "500";
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            question_button_45.BackColor = Color.Blue;
+            question_button_45.FlatStyle = FlatStyle.Popup;
+            question_button_45.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            question_button_45.ForeColor = Color.Gold;
+            question_button_45.Location = new Point(654, 196);
+            question_button_45.Margin = new Padding(2);
+            question_button_45.Name = "question_button_45";
+            question_button_45.Size = new Size(65, 50);
+            question_button_45.TabIndex = 20;
+            question_button_45.Text = "500";
+            question_button_45.UseVisualStyleBackColor = false;
+            question_button_45.Click += question_button_45_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(61, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 23);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Программирование";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Snow;
+            label2.Location = new Point(61, 46);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(190, 23);
+            label2.TabIndex = 21;
+            label2.Text = "Программирование";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(61, 99);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(251, 23);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Языки программирования";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Snow;
+            label3.Location = new Point(61, 99);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(251, 23);
+            label3.TabIndex = 22;
+            label3.Text = "Языки программирования";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(61, 152);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 23);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "IT - сленг";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Snow;
+            label4.Location = new Point(61, 152);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(95, 23);
+            label4.TabIndex = 23;
+            label4.Text = "IT - сленг";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Snow;
-            this.label5.Location = new System.Drawing.Point(61, 206);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 23);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Разное";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Snow;
+            label5.Location = new Point(61, 206);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(77, 23);
+            label5.TabIndex = 24;
+            label5.Text = "Разное";
             // 
-            // button21
+            // button_exit
             // 
-            this.button21.BackColor = System.Drawing.Color.Blue;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button21.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button21.ForeColor = System.Drawing.Color.Gold;
-            this.button21.Location = new System.Drawing.Point(749, 196);
-            this.button21.Margin = new System.Windows.Forms.Padding(2);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(102, 44);
-            this.button21.TabIndex = 25;
-            this.button21.Text = "ВЫХОД";
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            button_exit.BackColor = Color.Blue;
+            button_exit.FlatStyle = FlatStyle.Popup;
+            button_exit.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button_exit.ForeColor = Color.Gold;
+            button_exit.Location = new Point(749, 196);
+            button_exit.Margin = new Padding(2);
+            button_exit.Name = "button_exit";
+            button_exit.Size = new Size(102, 44);
+            button_exit.TabIndex = 25;
+            button_exit.Text = "ВЫХОД";
+            button_exit.UseVisualStyleBackColor = false;
+            button_exit.Click += button_exit_Click;
+            // 
+            // team1_name
+            // 
+            team1_name.BackColor = Color.Transparent;
+            team1_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team1_name.ForeColor = Color.Snow;
+            team1_name.Location = new Point(777, 36);
+            team1_name.Name = "team1_name";
+            team1_name.Size = new Size(100, 23);
+            team1_name.TabIndex = 26;
+            team1_name.Text = "label6";
+            team1_name.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // team2_name
+            // 
+            team2_name.BackColor = Color.Transparent;
+            team2_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team2_name.ForeColor = Color.Snow;
+            team2_name.Location = new Point(777, 63);
+            team2_name.Name = "team2_name";
+            team2_name.Size = new Size(100, 23);
+            team2_name.TabIndex = 27;
+            team2_name.Text = "label7";
+            team2_name.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // team3_name
+            // 
+            team3_name.BackColor = Color.Transparent;
+            team3_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team3_name.ForeColor = Color.Snow;
+            team3_name.Location = new Point(777, 89);
+            team3_name.Name = "team3_name";
+            team3_name.Size = new Size(100, 23);
+            team3_name.TabIndex = 28;
+            team3_name.Text = "label8";
+            team3_name.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // team4_name
+            // 
+            team4_name.BackColor = Color.Transparent;
+            team4_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team4_name.ForeColor = Color.Snow;
+            team4_name.Location = new Point(777, 116);
+            team4_name.Name = "team4_name";
+            team4_name.Size = new Size(100, 23);
+            team4_name.TabIndex = 29;
+            team4_name.Text = "label9";
+            team4_name.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // team5_name
+            // 
+            team5_name.BackColor = Color.Transparent;
+            team5_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team5_name.ForeColor = Color.Snow;
+            team5_name.Location = new Point(777, 142);
+            team5_name.Name = "team5_name";
+            team5_name.Size = new Size(100, 23);
+            team5_name.TabIndex = 30;
+            team5_name.Text = "label10";
+            team5_name.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // team1_score
+            // 
+            team1_score.BackColor = Color.Transparent;
+            team1_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team1_score.ForeColor = Color.Snow;
+            team1_score.Location = new Point(897, 36);
+            team1_score.Name = "team1_score";
+            team1_score.Size = new Size(95, 23);
+            team1_score.TabIndex = 31;
+            team1_score.Text = "label1";
+            team1_score.TextAlign = ContentAlignment.MiddleCenter;
+            team1_score.Visible = false;
+            // 
+            // team2_score
+            // 
+            team2_score.BackColor = Color.Transparent;
+            team2_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team2_score.ForeColor = Color.Snow;
+            team2_score.Location = new Point(897, 63);
+            team2_score.Name = "team2_score";
+            team2_score.Size = new Size(95, 23);
+            team2_score.TabIndex = 32;
+            team2_score.Text = "label6";
+            team2_score.TextAlign = ContentAlignment.MiddleCenter;
+            team2_score.Visible = false;
+            // 
+            // team4_score
+            // 
+            team4_score.BackColor = Color.Transparent;
+            team4_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team4_score.ForeColor = Color.Snow;
+            team4_score.Location = new Point(897, 116);
+            team4_score.Name = "team4_score";
+            team4_score.Size = new Size(95, 23);
+            team4_score.TabIndex = 34;
+            team4_score.Text = "label7";
+            team4_score.TextAlign = ContentAlignment.MiddleCenter;
+            team4_score.Visible = false;
+            // 
+            // team3_score
+            // 
+            team3_score.BackColor = Color.Transparent;
+            team3_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team3_score.ForeColor = Color.Snow;
+            team3_score.Location = new Point(897, 89);
+            team3_score.Name = "team3_score";
+            team3_score.Size = new Size(95, 23);
+            team3_score.TabIndex = 33;
+            team3_score.Text = "label8";
+            team3_score.TextAlign = ContentAlignment.MiddleCenter;
+            team3_score.Visible = false;
+            // 
+            // team5_score
+            // 
+            team5_score.BackColor = Color.Transparent;
+            team5_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            team5_score.ForeColor = Color.Snow;
+            team5_score.Location = new Point(897, 142);
+            team5_score.Name = "team5_score";
+            team5_score.Size = new Size(95, 23);
+            team5_score.TabIndex = 35;
+            team5_score.Text = "label9";
+            team5_score.TextAlign = ContentAlignment.MiddleCenter;
+            team5_score.Visible = false;
+            // 
+            // panel_question
+            // 
+            panel_question.BackgroundImage = (Image)resources.GetObject("panel_question.BackgroundImage");
+            panel_question.Controls.Add(panel2);
+            panel_question.Controls.Add(question_label);
+            panel_question.Location = new Point(47, 280);
+            panel_question.Name = "panel_question";
+            panel_question.Size = new Size(980, 306);
+            panel_question.TabIndex = 36;
+            panel_question.Visible = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(question_panel_team5_win);
+            panel2.Controls.Add(question_panel_team4_win);
+            panel2.Controls.Add(question_panel_team3_win);
+            panel2.Controls.Add(question_panel_team2_win);
+            panel2.Controls.Add(question_panel_team1_win);
+            panel2.Controls.Add(question_panel_team5_lose);
+            panel2.Controls.Add(question_panel_team4_lose);
+            panel2.Controls.Add(question_panel_team3_lose);
+            panel2.Controls.Add(question_panel_team2_lose);
+            panel2.Controls.Add(question_panel_team1_lose);
+            panel2.Controls.Add(question_panel_team1_name);
+            panel2.Controls.Add(question_panel_team5_score);
+            panel2.Controls.Add(question_panel_team2_name);
+            panel2.Controls.Add(question_panel_team4_score);
+            panel2.Controls.Add(question_panel_team3_name);
+            panel2.Controls.Add(question_panel_team3_score);
+            panel2.Controls.Add(question_panel_team4_name);
+            panel2.Controls.Add(question_panel_team2_score);
+            panel2.Controls.Add(question_panel_team5_name);
+            panel2.Controls.Add(question_panel_team1_score);
+            panel2.Dock = DockStyle.Right;
+            panel2.Location = new Point(701, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(279, 306);
+            panel2.TabIndex = 46;
+            // 
+            // question_panel_team5_win
+            // 
+            question_panel_team5_win.Location = new Point(239, 153);
+            question_panel_team5_win.Name = "question_panel_team5_win";
+            question_panel_team5_win.Size = new Size(26, 23);
+            question_panel_team5_win.TabIndex = 55;
+            question_panel_team5_win.Text = "+";
+            question_panel_team5_win.UseVisualStyleBackColor = true;
+            question_panel_team5_win.Visible = false;
+            question_panel_team5_win.Click += question_panel_team5_win_Click;
+            // 
+            // question_panel_team4_win
+            // 
+            question_panel_team4_win.Location = new Point(239, 126);
+            question_panel_team4_win.Name = "question_panel_team4_win";
+            question_panel_team4_win.Size = new Size(26, 23);
+            question_panel_team4_win.TabIndex = 54;
+            question_panel_team4_win.Text = "+";
+            question_panel_team4_win.UseVisualStyleBackColor = true;
+            question_panel_team4_win.Visible = false;
+            question_panel_team4_win.Click += question_panel_team4_win_Click;
+            // 
+            // question_panel_team3_win
+            // 
+            question_panel_team3_win.Location = new Point(239, 100);
+            question_panel_team3_win.Name = "question_panel_team3_win";
+            question_panel_team3_win.Size = new Size(26, 23);
+            question_panel_team3_win.TabIndex = 53;
+            question_panel_team3_win.Text = "+";
+            question_panel_team3_win.UseVisualStyleBackColor = true;
+            question_panel_team3_win.Visible = false;
+            question_panel_team3_win.Click += question_panel_team3_win_Click;
+            // 
+            // question_panel_team2_win
+            // 
+            question_panel_team2_win.Location = new Point(239, 73);
+            question_panel_team2_win.Name = "question_panel_team2_win";
+            question_panel_team2_win.Size = new Size(26, 23);
+            question_panel_team2_win.TabIndex = 52;
+            question_panel_team2_win.Text = "+";
+            question_panel_team2_win.UseVisualStyleBackColor = true;
+            question_panel_team2_win.Visible = false;
+            question_panel_team2_win.Click += question_panel_team2_win_Click;
+            // 
+            // question_panel_team1_win
+            // 
+            question_panel_team1_win.Location = new Point(239, 48);
+            question_panel_team1_win.Name = "question_panel_team1_win";
+            question_panel_team1_win.Size = new Size(26, 23);
+            question_panel_team1_win.TabIndex = 51;
+            question_panel_team1_win.Text = "+";
+            question_panel_team1_win.UseVisualStyleBackColor = true;
+            question_panel_team1_win.Visible = false;
+            question_panel_team1_win.Click += question_panel_team1_win_Click;
+            // 
+            // question_panel_team5_lose
+            // 
+            question_panel_team5_lose.Location = new Point(138, 153);
+            question_panel_team5_lose.Name = "question_panel_team5_lose";
+            question_panel_team5_lose.Size = new Size(26, 23);
+            question_panel_team5_lose.TabIndex = 50;
+            question_panel_team5_lose.Text = "-";
+            question_panel_team5_lose.UseVisualStyleBackColor = true;
+            question_panel_team5_lose.Visible = false;
+            question_panel_team5_lose.Click += question_panel_team5_lose_Click;
+            // 
+            // question_panel_team4_lose
+            // 
+            question_panel_team4_lose.Location = new Point(138, 126);
+            question_panel_team4_lose.Name = "question_panel_team4_lose";
+            question_panel_team4_lose.Size = new Size(26, 23);
+            question_panel_team4_lose.TabIndex = 49;
+            question_panel_team4_lose.Text = "-";
+            question_panel_team4_lose.UseVisualStyleBackColor = true;
+            question_panel_team4_lose.Visible = false;
+            question_panel_team4_lose.Click += question_panel_team4_lose_Click;
+            // 
+            // question_panel_team3_lose
+            // 
+            question_panel_team3_lose.Location = new Point(138, 100);
+            question_panel_team3_lose.Name = "question_panel_team3_lose";
+            question_panel_team3_lose.Size = new Size(26, 23);
+            question_panel_team3_lose.TabIndex = 48;
+            question_panel_team3_lose.Text = "-";
+            question_panel_team3_lose.UseVisualStyleBackColor = true;
+            question_panel_team3_lose.Visible = false;
+            question_panel_team3_lose.Click += question_panel_team3_lose_Click;
+            // 
+            // question_panel_team2_lose
+            // 
+            question_panel_team2_lose.Location = new Point(138, 73);
+            question_panel_team2_lose.Name = "question_panel_team2_lose";
+            question_panel_team2_lose.Size = new Size(26, 23);
+            question_panel_team2_lose.TabIndex = 47;
+            question_panel_team2_lose.Text = "-";
+            question_panel_team2_lose.UseVisualStyleBackColor = true;
+            question_panel_team2_lose.Visible = false;
+            question_panel_team2_lose.Click += question_panel_team2_lose_Click;
+            // 
+            // question_panel_team1_lose
+            // 
+            question_panel_team1_lose.Location = new Point(138, 48);
+            question_panel_team1_lose.Name = "question_panel_team1_lose";
+            question_panel_team1_lose.Size = new Size(26, 23);
+            question_panel_team1_lose.TabIndex = 46;
+            question_panel_team1_lose.Text = "-";
+            question_panel_team1_lose.UseVisualStyleBackColor = true;
+            question_panel_team1_lose.Visible = false;
+            question_panel_team1_lose.Click += question_panel_team1_lose_Click;
+            // 
+            // question_panel_team1_name
+            // 
+            question_panel_team1_name.BackColor = Color.Transparent;
+            question_panel_team1_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team1_name.ForeColor = Color.Snow;
+            question_panel_team1_name.Location = new Point(3, 47);
+            question_panel_team1_name.Name = "question_panel_team1_name";
+            question_panel_team1_name.Size = new Size(100, 23);
+            question_panel_team1_name.TabIndex = 36;
+            question_panel_team1_name.Text = "label6";
+            question_panel_team1_name.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team1_name.Visible = false;
+            // 
+            // question_panel_team5_score
+            // 
+            question_panel_team5_score.BackColor = Color.Transparent;
+            question_panel_team5_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team5_score.ForeColor = Color.Snow;
+            question_panel_team5_score.Location = new Point(156, 153);
+            question_panel_team5_score.Name = "question_panel_team5_score";
+            question_panel_team5_score.Size = new Size(95, 23);
+            question_panel_team5_score.TabIndex = 45;
+            question_panel_team5_score.Text = "label9";
+            question_panel_team5_score.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team5_score.Visible = false;
+            // 
+            // question_panel_team2_name
+            // 
+            question_panel_team2_name.BackColor = Color.Transparent;
+            question_panel_team2_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team2_name.ForeColor = Color.Snow;
+            question_panel_team2_name.Location = new Point(3, 74);
+            question_panel_team2_name.Name = "question_panel_team2_name";
+            question_panel_team2_name.Size = new Size(100, 23);
+            question_panel_team2_name.TabIndex = 37;
+            question_panel_team2_name.Text = "label7";
+            question_panel_team2_name.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team2_name.Visible = false;
+            // 
+            // question_panel_team4_score
+            // 
+            question_panel_team4_score.BackColor = Color.Transparent;
+            question_panel_team4_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team4_score.ForeColor = Color.Snow;
+            question_panel_team4_score.Location = new Point(156, 127);
+            question_panel_team4_score.Name = "question_panel_team4_score";
+            question_panel_team4_score.Size = new Size(95, 23);
+            question_panel_team4_score.TabIndex = 44;
+            question_panel_team4_score.Text = "label7";
+            question_panel_team4_score.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team4_score.Visible = false;
+            // 
+            // question_panel_team3_name
+            // 
+            question_panel_team3_name.BackColor = Color.Transparent;
+            question_panel_team3_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team3_name.ForeColor = Color.Snow;
+            question_panel_team3_name.Location = new Point(3, 100);
+            question_panel_team3_name.Name = "question_panel_team3_name";
+            question_panel_team3_name.Size = new Size(100, 23);
+            question_panel_team3_name.TabIndex = 38;
+            question_panel_team3_name.Text = "label8";
+            question_panel_team3_name.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team3_name.Visible = false;
+            // 
+            // question_panel_team3_score
+            // 
+            question_panel_team3_score.BackColor = Color.Transparent;
+            question_panel_team3_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team3_score.ForeColor = Color.Snow;
+            question_panel_team3_score.Location = new Point(156, 100);
+            question_panel_team3_score.Name = "question_panel_team3_score";
+            question_panel_team3_score.Size = new Size(95, 23);
+            question_panel_team3_score.TabIndex = 43;
+            question_panel_team3_score.Text = "label8";
+            question_panel_team3_score.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team3_score.Visible = false;
+            // 
+            // question_panel_team4_name
+            // 
+            question_panel_team4_name.BackColor = Color.Transparent;
+            question_panel_team4_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team4_name.ForeColor = Color.Snow;
+            question_panel_team4_name.Location = new Point(3, 127);
+            question_panel_team4_name.Name = "question_panel_team4_name";
+            question_panel_team4_name.Size = new Size(100, 23);
+            question_panel_team4_name.TabIndex = 39;
+            question_panel_team4_name.Text = "label9";
+            question_panel_team4_name.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team4_name.Visible = false;
+            // 
+            // question_panel_team2_score
+            // 
+            question_panel_team2_score.BackColor = Color.Transparent;
+            question_panel_team2_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team2_score.ForeColor = Color.Snow;
+            question_panel_team2_score.Location = new Point(156, 74);
+            question_panel_team2_score.Name = "question_panel_team2_score";
+            question_panel_team2_score.Size = new Size(95, 23);
+            question_panel_team2_score.TabIndex = 42;
+            question_panel_team2_score.Text = "label6";
+            question_panel_team2_score.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team2_score.Visible = false;
+            // 
+            // question_panel_team5_name
+            // 
+            question_panel_team5_name.BackColor = Color.Transparent;
+            question_panel_team5_name.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team5_name.ForeColor = Color.Snow;
+            question_panel_team5_name.Location = new Point(3, 153);
+            question_panel_team5_name.Name = "question_panel_team5_name";
+            question_panel_team5_name.Size = new Size(100, 23);
+            question_panel_team5_name.TabIndex = 40;
+            question_panel_team5_name.Text = "label10";
+            question_panel_team5_name.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team5_name.Visible = false;
+            // 
+            // question_panel_team1_score
+            // 
+            question_panel_team1_score.BackColor = Color.Transparent;
+            question_panel_team1_score.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            question_panel_team1_score.ForeColor = Color.Snow;
+            question_panel_team1_score.Location = new Point(156, 47);
+            question_panel_team1_score.Name = "question_panel_team1_score";
+            question_panel_team1_score.Size = new Size(95, 23);
+            question_panel_team1_score.TabIndex = 41;
+            question_panel_team1_score.Text = "label1";
+            question_panel_team1_score.TextAlign = ContentAlignment.MiddleCenter;
+            question_panel_team1_score.Visible = false;
+            // 
+            // question_label
+            // 
+            question_label.BackColor = Color.Transparent;
+            question_label.Location = new Point(16, 9);
+            question_label.Name = "question_label";
+            question_label.Size = new Size(658, 288);
+            question_label.TabIndex = 0;
+            question_label.Text = "label1";
+            question_label.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1112, 409);
-            this.ControlBox = false;
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1270, 611);
+            ControlBox = false;
+            Controls.Add(panel_question);
+            Controls.Add(team5_score);
+            Controls.Add(team4_score);
+            Controls.Add(team3_score);
+            Controls.Add(team2_score);
+            Controls.Add(team1_score);
+            Controls.Add(team5_name);
+            Controls.Add(team4_name);
+            Controls.Add(team3_name);
+            Controls.Add(team2_name);
+            Controls.Add(team1_name);
+            Controls.Add(button_exit);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(question_button_45);
+            Controls.Add(question_button_44);
+            Controls.Add(question_button_43);
+            Controls.Add(question_button_42);
+            Controls.Add(question_button_41);
+            Controls.Add(question_button_35);
+            Controls.Add(question_button_34);
+            Controls.Add(question_button_33);
+            Controls.Add(question_button_32);
+            Controls.Add(question_button_31);
+            Controls.Add(question_button_25);
+            Controls.Add(question_button_24);
+            Controls.Add(question_button_23);
+            Controls.Add(question_button_22);
+            Controls.Add(question_button_21);
+            Controls.Add(question_button_15);
+            Controls.Add(question_button_14);
+            Controls.Add(question_button_13);
+            Controls.Add(question_button_12);
+            Controls.Add(question_button_11);
+            Margin = new Padding(2);
+            Name = "Form2";
+            Text = "Form2";
+            WindowState = FormWindowState.Maximized;
+            panel_question.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button19;
-        private Button button20;
+        private Button question_button_11;
+        private Button question_button_12;
+        private Button question_button_13;
+        private Button question_button_14;
+        private Button question_button_15;
+        private Button question_button_21;
+        private Button question_button_22;
+        private Button question_button_23;
+        private Button question_button_24;
+        private Button question_button_25;
+        private Button question_button_31;
+        private Button question_button_32;
+        private Button question_button_33;
+        private Button question_button_34;
+        private Button question_button_35;
+        private Button question_button_41;
+        private Button question_button_42;
+        private Button question_button_43;
+        private Button question_button_44;
+        private Button question_button_45;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button21;
+        private Button button_exit;
+        private Label team1_name;
+        private Label team2_name;
+        private Label team3_name;
+        private Label team4_name;
+        private Label team5_name;
+        private Label team1_score;
+        private Label team2_score;
+        private Label team4_score;
+        private Label team3_score;
+        private Label team5_score;
+        private Panel panel_question;
+        private Panel panel2;
+        private Button question_panel_team5_win;
+        private Button question_panel_team4_win;
+        private Button question_panel_team3_win;
+        private Button question_panel_team2_win;
+        private Button question_panel_team1_win;
+        private Button question_panel_team5_lose;
+        private Button question_panel_team4_lose;
+        private Button question_panel_team3_lose;
+        private Button question_panel_team2_lose;
+        private Button question_panel_team1_lose;
+        private Label question_panel_team1_name;
+        private Label question_panel_team5_score;
+        private Label question_panel_team2_name;
+        private Label question_panel_team4_score;
+        private Label question_panel_team3_name;
+        private Label question_panel_team3_score;
+        private Label question_panel_team4_name;
+        private Label question_panel_team2_score;
+        private Label question_panel_team5_name;
+        private Label question_panel_team1_score;
+        private Label question_label;
     }
 }

@@ -2,123 +2,43 @@ namespace Своя_игра
 {
     public partial class Form1 : Form
     {
-        
-        int numberTeam;
-        string[,] teamNames;
-        //Список с рандомными названиями которые будут рандомно заполнятся при добавления new команды.
-        string[] defoltNames = { "Почему...", "Кто-то", "Настойки", "Чебупели", "Крокодилы" };
-        string[] selectedNames = {};
-        int[] chek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        int numberOfTeams = 0;
+        string[] teams = {"", "", "", "", ""};
         public Form1()
         {
             InitializeComponent();
-            Random rnd = new Random();
-            numberTeam = 0;
-            button2.Enabled = false;
-            dataGridView1.RowCount = 1;
-            int r = rnd.Next(0, defoltNames.Length);
-            dataGridView1[0, 0].Value = defoltNames[r];
-            selectedNames = Add_elem(selectedNames, defoltNames[r]);
-
-            defoltNames = defoltNames.Where(e => e != defoltNames[r]).ToArray();
         }
-
-        static void Insert(ref string[] array, string value)
-        {
-            string[] temp = new string[array.Length + 1];
-            temp[array.Length] = value;
-            array = temp;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-
-            int r = rnd.Next(0, defoltNames.Length);
-
-            button2.Enabled = true;
-            numberTeam += 1;
-            if (numberTeam == 4)
-            {
-                button1.Enabled = false;
-            }
-            dataGridView1.RowCount = numberTeam + 1;
-            dataGridView1[0, numberTeam].Value = defoltNames[r];
-            selectedNames = Add_elem(selectedNames, defoltNames[r]);
-
-            defoltNames = defoltNames.Where(e => e != defoltNames[r]).ToArray();
-        }
-
         static string[] Add_elem(string[] arr, string elem)
         {
             string[] newArr = new string[arr.Length + 1];
-            for(int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 newArr[i] = arr[i];
             }
             newArr[newArr.Length - 1] = elem;
             return newArr;
         }
+
+        static void Insert_elem(ref string[] arr, int index, string elem)
+        {
+            arr[index] = elem;
+        }
+
+        static void Del_elem(ref string[] arr, string elem)
+        {
+            arr = arr.Where(e => e != elem).ToArray();
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-            button1.Enabled = true;
-            numberTeam -= 1;
-            if (numberTeam == 0)
-            {
-                button2.Enabled = false;
-            }
-            dataGridView1.RowCount = numberTeam + 1;
-
-            defoltNames = Add_elem(defoltNames, selectedNames[selectedNames.Length - 1]);
-
-            selectedNames = selectedNames.Where(e => e != selectedNames[selectedNames.Length - 1]).ToArray();
-
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            teamNames = new string[2, dataGridView1.RowCount];
-            int j = -1;
-            for (int i = 0; i < teamNames.GetLength(1); i++)
+            if (numberOfTeams > 0)
             {
-                if (dataGridView1[0, i].Value != null)
-                {
-                    teamNames[0, i] = dataGridView1[0, i].Value.ToString();
-                    teamNames[1, i] = "0";
-                }
-                else
-                {
-                    j = 5;
-                }
-            }
-            if (j != 5)
-            {
-                //новое окно или что то для самой игры 
-
-                Form2 game = new Form2(teamNames,chek);
-                this.Hide();
+                Form2 game = new Form2(teams, numberOfTeams);
                 game.Show();
-
-                //form.Close();
-
-                //Проверка ввода названия команд
-
-
-                //for (int i = 0; i < teamNames.GetLength(1); i++)
-                //{
-                //    str += teamNames[0, i] + " " + teamNames[1, i] + "\r\n";
-                //}
+                this.Hide();
             }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -126,9 +46,263 @@ namespace Своя_игра
             Environment.Exit(0);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void menu_team1_buttonAdd_Click(object sender, EventArgs e)
+        {
+            menu_team2_name.Visible = true;
+            menu_team2_buttonAdd.Visible = true;
+            menu_team1_name.Enabled = false;
+            menu_team1_buttonDel.Visible = true;
+            menu_team1_buttonAdd.Visible = false;
+            numberOfTeams++;
+            Insert_elem(ref teams, 0, menu_team1_name.Text);
+        }
+
+        private void menu_team1_buttonDel_Click(object sender, EventArgs e)
+        {
+            switch (numberOfTeams)
+            {
+                case 1:
+                    teams[0] = "";
+                    menu_team1_name.Text = "";
+                    menu_team2_name.Visible = false;
+                    menu_team2_buttonAdd.Visible = false;
+                    menu_team1_name.Enabled = true;
+                    menu_team1_buttonDel.Visible = false;
+                    menu_team1_buttonAdd.Visible = true;
+                    break;
+                case 2:
+                    menu_team1_name.Text = menu_team2_name.Text;
+                    teams[0] = teams[1];
+                    teams[1] = "";
+                    menu_team2_name.Text = "";
+                    menu_team3_name.Visible = false;
+                    menu_team3_buttonAdd.Visible = false;
+                    menu_team2_name.Enabled = true;
+                    menu_team2_buttonDel.Visible = false;
+                    menu_team2_buttonAdd.Visible = true;
+                    break;
+                case 3:
+                    menu_team1_name.Text = menu_team2_name.Text;
+                    menu_team2_name.Text = menu_team3_name.Text;
+                    teams[0] = teams[1];
+                    teams[1] = teams[2];
+                    teams[2] = "";
+                    menu_team3_name.Text = "";
+                    menu_team4_name.Visible = false;
+                    menu_team4_buttonAdd.Visible = false;
+                    menu_team3_name.Enabled = true;
+                    menu_team3_buttonDel.Visible = false;
+                    menu_team3_buttonAdd.Visible = true;
+                    break;
+                case 4:
+                    menu_team1_name.Text = menu_team2_name.Text;
+                    menu_team2_name.Text = menu_team3_name.Text;
+                    menu_team3_name.Text = menu_team4_name.Text;
+                    teams[0] = teams[1];
+                    teams[1] = teams[2];
+                    teams[2] = teams[3];
+                    teams[3] = "";
+                    menu_team4_name.Text = "";
+                    menu_team5_name.Visible = false;
+                    menu_team5_buttonAdd.Visible = false;
+                    menu_team4_name.Enabled = true;
+                    menu_team4_buttonDel.Visible = false;
+                    menu_team4_buttonAdd.Visible = true;
+                    break;
+                case 5:
+                    menu_team1_name.Text = menu_team2_name.Text;
+                    menu_team2_name.Text = menu_team3_name.Text;
+                    menu_team3_name.Text = menu_team4_name.Text;
+                    menu_team4_name.Text = menu_team5_name.Text;
+                    teams[0] = teams[1];
+                    teams[1] = teams[2];
+                    teams[2] = teams[3];
+                    teams[3] = teams[4];
+                    teams[4] = "";
+                    menu_team5_name.Text = "";
+                    menu_team5_name.Enabled = true;
+                    menu_team5_buttonDel.Visible = false;
+                    menu_team5_buttonAdd.Visible = true;
+                    break;
+            }
+            numberOfTeams--;
+        }
+
+        private void menu_team2_buttonAdd_Click(object sender, EventArgs e)
+        {
+            menu_team3_name.Visible = true;
+            menu_team3_buttonAdd.Visible = true;
+            menu_team2_name.Enabled = false;
+            menu_team2_buttonDel.Visible = true;
+            menu_team2_buttonAdd.Visible = false;
+            numberOfTeams++;
+            Insert_elem(ref teams, 1, menu_team2_name.Text);
+        }
+
+        private void menu_team2_buttonDel_Click(object sender, EventArgs e)
+        {
+            switch (numberOfTeams)
+            {
+                case 2:
+                    teams[2] = "";
+                    menu_team2_name.Text = "";
+                    menu_team3_name.Visible = false;
+                    menu_team3_buttonAdd.Visible = false;
+                    menu_team2_name.Enabled = true;
+                    menu_team2_buttonDel.Visible = false;
+                    menu_team2_buttonAdd.Visible = true;
+                    break;
+                case 3:
+                    teams[1] = teams[2];
+                    teams[2] = "";
+                    menu_team2_name.Text = menu_team3_name.Text;
+                    menu_team3_name.Text = "";
+                    menu_team4_name.Visible = false;
+                    menu_team4_buttonAdd.Visible = false;
+                    menu_team3_name.Enabled = true;
+                    menu_team3_buttonDel.Visible = false;
+                    menu_team3_buttonAdd.Visible = true;
+                    break;
+                case 4:
+                    teams[1] = teams[2];
+                    teams[2] = teams[3];
+                    teams[3] = "";
+                    menu_team2_name.Text = menu_team3_name.Text;
+                    menu_team3_name.Text = menu_team4_name.Text;
+                    menu_team4_name.Text = "";
+                    menu_team5_name.Visible = false;
+                    menu_team5_buttonAdd.Visible = false;
+                    menu_team4_name.Enabled = true;
+                    menu_team4_buttonDel.Visible = false;
+                    menu_team4_buttonAdd.Visible = true;
+                    break;
+                case 5:
+                    teams[1] = teams[2];
+                    teams[2] = teams[3];
+                    teams[3] = teams[4];
+                    teams[4] = "";
+                    menu_team2_name.Text = menu_team3_name.Text;
+                    menu_team3_name.Text = menu_team4_name.Text;
+                    menu_team4_name.Text = menu_team5_name.Text;
+                    menu_team5_name.Text = "";
+                    menu_team5_name.Enabled = true;
+                    menu_team5_buttonDel.Visible = false;
+                    menu_team5_buttonAdd.Visible = true;
+                    break;
+            }
+            numberOfTeams--;
+        }
+
+        private void menu_team3_buttonDel_Click(object sender, EventArgs e)
+        {
+            switch (numberOfTeams)
+            {
+                case 3:
+                    teams[2] = "";
+                    menu_team3_name.Text = "";
+                    menu_team4_name.Visible = false;
+                    menu_team4_buttonAdd.Visible = false;
+                    menu_team3_name.Enabled = true;
+                    menu_team3_buttonDel.Visible = false;
+                    menu_team3_buttonAdd.Visible = true;
+                    break;
+                case 4:
+                    teams[2] = teams[3];
+                    teams[3] = "";
+                    menu_team3_name.Text = menu_team4_name.Text;
+                    menu_team4_name.Text = "";
+                    menu_team5_name.Visible = false;
+                    menu_team5_buttonAdd.Visible = false;
+                    menu_team4_name.Enabled = true;
+                    menu_team4_buttonDel.Visible = false;
+                    menu_team4_buttonAdd.Visible = true;
+                    break;
+                case 5:
+                    teams[2] = teams[3];
+                    teams[3] = teams[4];
+                    teams[4] = "";
+                    menu_team3_name.Text = menu_team4_name.Text;
+                    menu_team4_name.Text = menu_team5_name.Text;
+                    menu_team5_name.Text = "";
+                    menu_team5_name.Enabled = true;
+                    menu_team5_buttonDel.Visible = false;
+                    menu_team5_buttonAdd.Visible = true;
+                    break;
+            }
+            numberOfTeams--;
+        }
+
+        private void menu_team4_buttonDel_Click(object sender, EventArgs e)
+        {
+            switch (numberOfTeams)
+            {
+                case 4:
+                    teams[3] = "";
+                    menu_team4_name.Text = "";
+                    menu_team5_name.Visible = false;
+                    menu_team5_buttonAdd.Visible = false;
+                    menu_team4_name.Enabled = true;
+                    menu_team4_buttonDel.Visible = false;
+                    menu_team4_buttonAdd.Visible = true;
+                    break;
+                case 5:
+                    teams[3] = teams[4];
+                    teams[4] = "";
+                    menu_team4_name.Text = menu_team5_name.Text;
+                    menu_team5_name.Text = "";
+                    menu_team5_name.Enabled = true;
+                    menu_team5_buttonDel.Visible = false;
+                    menu_team5_buttonAdd.Visible = true;
+                    break;
+            }
+            numberOfTeams--;
+        }
+
+        private void menu_team5_buttonDel_Click(object sender, EventArgs e)
+        {
+            switch (numberOfTeams)
+            {
+                case 5:
+                    teams[4] = "";
+                    menu_team5_name.Text = "";
+                    menu_team5_name.Enabled = true;
+                    menu_team5_buttonDel.Visible = false;
+                    menu_team5_buttonAdd.Visible = true;
+                    break;
+            }
+            numberOfTeams--;
+        }
+
+        private void menu_team3_buttonAdd_Click(object sender, EventArgs e)
+        {
+            menu_team4_name.Visible = true;
+            menu_team4_buttonAdd.Visible = true;
+            menu_team3_name.Enabled = false;
+            menu_team3_buttonDel.Visible = true;
+            menu_team3_buttonAdd.Visible = false;
+            numberOfTeams++;
+            Insert_elem(ref teams, 2, menu_team3_name.Text);
+        }
+
+        private void menu_team4_buttonAdd_Click(object sender, EventArgs e)
+        {
+            menu_team5_name.Visible = true;
+            menu_team5_buttonAdd.Visible = true;
+            menu_team4_name.Enabled = false;
+            menu_team4_buttonDel.Visible = true;
+            menu_team4_buttonAdd.Visible = false;
+            numberOfTeams++;
+            Insert_elem(ref teams, 3, menu_team4_name.Text);
+        }
+
+        private void menu_team5_buttonAdd_Click(object sender, EventArgs e)
+        {
+            menu_team5_name.Enabled = false;
+            menu_team5_buttonDel.Visible = true;
+            menu_team5_buttonAdd.Visible = false;
+            numberOfTeams++;
+            Insert_elem(ref teams, 4, menu_team5_name.Text);
         }
     }
 }
